@@ -79,14 +79,23 @@ function drawBar(options) {
 	bars.append("rect")
 	    .attr({
 	        "y": function(d) {
-	            return scale_y(d.population)
+	            return chart_height
 	        },
 	        "width": scale_x.rangeBand(),
 	        "height": function(d) {
-	            return chart_height - scale_y(d.population)
+	            return 0;
 	        }
 	    })
-	    .style("fill", "steelblue");
+	    .style("fill", "steelblue")
+	    .transition().duration(3000)
+	    .attr({
+	    	"y": function(d) {
+	            return scale_y(d.population)
+	        },
+	    	"height": function(d) {
+	            return chart_height - scale_y(d.population)
+	        }
+	    });
 
 	bars.append("text")
 	    .attr({

@@ -1,0 +1,25 @@
+.curve {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2px;
+}
+
+.tick line {
+    stroke: gray;
+    stroke-width: 1;
+    fill:none;
+    stroke-linecap: round;
+    stroke-dasharray: 1, 4;
+}
+.gridx .tick:first-child line {
+    stroke: gray;
+    stroke-width: 0;
+}
+.domain{
+	stroke: gray;
+	stroke-width: 1;
+	fill:none;
+}
+.bar rect{
+	fill:#90ee7e;
+}
