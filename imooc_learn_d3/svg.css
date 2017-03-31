@@ -1,0 +1,48 @@
+#YOUR-SVG-CONTAINER { //ADJUST NAME TO MATCH YOUR ID
+  position: relative;
+  width: 360px;   //ADJUST WIDTH TO MATCH WIDTH OF YOUR TEXT
+  height: 110px;  //ADJUST HEIGHT TO MATCH HEIGHT OF YOUR TEXT
+  margin: 40vh auto 0 auto;
+}
+#svg-canvas { //ADJUST NAME TO MATCH YOUR ID
+  position: relative;
+  width: 360px; //ADJUST WIDTH TO MATCH WIDTH OF YOUR TEXT
+  height: 110px; //ADJUST HEIGHT TO MATCH HEIGHT OF YOUR TEXT
+}
+path {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: draw 2s linear forwards;
+    -webkit-animation: draw 2s linear forwards;
+    -moz-animation: draw 8s linear forwards;
+    -o-animation: draw 8s linear forwards;
+    font-weight: bold;
+    font-family: Amatic SC;
+    -inkscape-font-specification: Amatic SC Bold";
+    }
+    @keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+        }
+    }
+    @-webkit-keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+        }
+    }
+  
+    @-moz-keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+        }
+    }
+    @-o-keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+path{
+	fill-opacity: 0;
+	stroke: #000;
+	stroke-width: 1.5;
+}
