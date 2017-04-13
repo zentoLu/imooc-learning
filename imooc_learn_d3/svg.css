@@ -1,3 +1,27 @@
+#welecom{
+    background: #eba877;
+    position: relative;
+    width: 320px;
+    left: 50%;
+    top: 300px;
+    color: #FFF;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+.path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s 1s linear infinite;
+}
+.path2 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s 3s linear infinite;
+}
+@keyframes dash{
+    to{
+        stroke-dashoffset: 0;  
+    } 
+}
 #YOUR-SVG-CONTAINER { //ADJUST NAME TO MATCH YOUR ID
   position: relative;
   width: 360px;   //ADJUST WIDTH TO MATCH WIDTH OF YOUR TEXT
